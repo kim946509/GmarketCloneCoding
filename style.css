@@ -254,7 +254,7 @@ body {
 }
 
 .depth-navigation li {
-    height: 2.78rem;
+    height: 11%;
     /* 각 리스트 항목의 높이 설정 */
     display: flex;
     /* 내용 수직 정렬을 위한 flex 사용 */
@@ -262,7 +262,7 @@ body {
     /* 수직 중앙 정렬 */
     padding: 0 1rem;
     /* 좌우 패딩 */
-    border-bottom: 1px solid #fff;
+    border-bottom: 0.001rem solid #d8d8d8;
 }
 
 .depth-navigation li a {
@@ -497,4 +497,191 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: #333;
+}
+
+/* ------------------------------------------------- */
+/* 메인 마켓 섹션 */
+.main-market-section {
+    width: 100%;
+    height: auto;
+    padding: 4rem 0 0 0;
+    background-color: #fff;
+}
+
+.main-market-inner {
+    width: 75rem;
+    /* 1200px */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 스마일 프레시 및 스마일 배송 박스 */
+.smile-fresh-box,
+.smile-delivery-box {
+    width: 35.875rem;
+    /* 574px */
+    /* height: 48.5rem; */
+    /* 776px */
+    padding: 0;
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.market-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.market-title h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.go-to a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #22A832;
+    font-weight: bold;
+}
+
+/* 배너 정보 섹션 */
+.information-box {
+    width: 14.5rem;
+    /* 232px */
+    height: 11.625rem;
+    /* 186px */
+    padding: 2.25rem 16.3125rem 0 5.0625rem;
+    /* padding: 36px 261px 0px 81px */
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 1rem;
+    /* 부모 요소에 relative 설정 */
+}
+
+.banner-logo-text {
+    margin-bottom: 1.6rem;
+}
+
+.banner-logo {
+    margin-bottom: 1rem;
+    /* 이미지와 텍스트 사이의 간격 */
+}
+
+.banner-logo img {
+    width: 7.5rem;
+    /* 120px -> rem (7.5rem) */
+    height: 1.375rem;
+    /* 22px -> rem (1.375rem) */
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text h3 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin: 0;
+    color: #fff;
+}
+
+.banner-text p {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.banner-image {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 배경색 설정 */
+.smile-fresh-box .information-box {
+    background: linear-gradient(90deg, #0080FF, #00C96A);
+}
+
+.smile-delivery-box .information-box {
+    background: linear-gradient(90deg, #4A90E2, #00A2C7);
+}
+
+/* ---------------------------------------------------------------- */
+/* 카테고리 헤더 박스 */
+.category-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-item-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 45rem;
+    /* 부모 컨테이너에 맞춰 너비를 균등하게 나누기 */
+    background-color: white;
+    padding: 0.5rem;
+}
+
+/* 카테고리 */
+.category {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* 카테고리 아이템 */
+.category-item {
+    display: inline-block;
+    width: 40%;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5rem;
+    color: #333;
+    font-weight: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* hover 효과 */
+.category-item:hover {
+    background-color: #22A832;
+    color: white;
+    font-weight: bold;
+}
+
+/* 카테고리 간 구분선 */
+.category-item-header .category:not(:last-child) {
+    position: relative;
+}
+
+.category-item-header .category:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60%;
+    background-color: #d3d3d3;
 }
