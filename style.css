@@ -56,9 +56,9 @@ body {
 
 /* 검색창 */
 .search-bar {
-    width: 549px;
+    width: 30rem;
     /* 고정된 549px */
-    height: 44px;
+    height: 2.5rem;
     /* 고정된 44px */
     margin: 0;
     /* 여백을 제거 */
