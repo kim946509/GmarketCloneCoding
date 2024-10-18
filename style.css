@@ -1,450 +1,479 @@
-/* Global Common */
-.for-a11y {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+/* 공통 스타일 */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
     padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    text-indent: -5000em;
-}
-
-#header *,
-#desktop_layout-header * {
-    font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Roboto, Noto Sans CJK KR, Tahoma, 'Noto Sans KR', 'Gmarket Sans', sans-serif;
-}
-
-button {
-    padding: 0;
-    background-color: transparent
-}
-
-#desktop_layout-header.section__header {
-    position: relative;
-    height: 173px;
-    z-index: 5000
-}
-
-#desktop_layout-header.section__header a:hover {
-    text-decoration: none
-}
-
-#desktop_layout-header .box__header {
-    position: relative;
-    width: 100%;
-    min-width: 1200px;
-    height: 173px;
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
 
-#desktop_layout-header .box__header .box__header-inner {
-    position: relative;
-    width: 1200px;
-    height: 173px;
-    margin: 0 auto
-}
-
-#desktop_layout-header .box__header .box__head-content {
-    height: 113px
-}
-
-#desktop_layout-header .box__header .box__title-logo {
-    display: inline-block;
-    margin-left: -40px;
-    font-size: 0;
-    vertical-align: top
-}
-
-#desktop_layout-header .box__header .box__head-content--lottie .box__title-logo {
-    position: absolute;
-    left: -40px;
-    top: 0;
-    margin: 0;
-    z-index: 10;
-}
-
-#desktop_layout-header .box__header .box__title-logo .link__head {
-    display: block
-}
-
-#desktop_layout-header .box__header .box__title-logo .link__head .sprite__common {
-    display: none
-}
-
-#desktop_layout-header .box__header .box__head-search {
-    position: relative;
-    display: inline-block;
-    width: 553px;
-    height: 48px;
-    margin-top: 40px;
-    margin-left: -5px;
-    border-radius: 24px;
-    border: 2px solid #067dfd;
-    box-sizing: border-box;
-    vertical-align: top;
-    background-color: #fff
-}
-
-#desktop_layout-header .box__header .box__head-content--lottie .box__head-search {
-    position: absolute;
-    left: 200px;
-    top: 40px;
-    margin: 0;
-    z-index: 10
-}
-
-#desktop_layout-header .box__header .box__head-search .box__search-input {
-    display: block;
-    padding: 7px 8px 8px
-}
-
-#desktop_layout-header .box__header .box__head-search .form__input {
-    display: block;
+.boxheader {
     width: 100%;
-    height: 29px;
+    height: 10.8125rem;
+    display: flex;
+    /* 중앙 정렬을 위한 flex 적용 */
+    justify-content: center;
+    /* 173px -> rem */
+}
+
+.box_head-content {
+    max-width: 75rem;
+    /* 1200px -> rem */
+    height: 100%;
+    width: 100%;
+}
+
+/* 헤더의 고정된 최소 너비 설정 */
+#header {
+    margin-top: 0.4rem;
+    background-color: #fff;
+    width: 100%;
+    height: 7.0625rem;
+    /* 113px -> rem */
+    min-width: 1260px;
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1200px;
+    /* 최대 너비를 고정 */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 로고 */
+.logo {
+    margin-left: 0;
+}
+
+.logo img {
+    width: 15rem;
+    /* 240px -> rem */
+    height: 7.0625rem;
+    /* 113px -> rem */
+}
+
+/* 검색창 */
+.search-bar {
+    width: 549px;
+    /* 고정된 549px */
+    height: 44px;
+    /* 고정된 44px */
+    margin: 0;
+    /* 여백을 제거 */
+    border: 2px solid #007acc;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.search-bar button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 광고 배너 */
+.ad-banner {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    /* 14px -> rem */
+    color: #666;
+}
+
+.ad-banner img {
+    width: 11.375rem;
+    /* 182px -> rem */
+    height: 4.375rem;
+    /* 70px -> rem */
+    margin-right: 0.625rem;
+    /* 10px -> rem */
+}
+
+/* 사용자 도구 (마이페이지, 장바구니 등) */
+.user-tools {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.user-tools a {
+    width: 4.5rem;
+    height: 5rem;
     padding: 0;
-    border: 0;
-    font-size: 16px;
-    color: #222;
-    letter-spacing: -0.5px;
-    line-height: 29px;
-    background-color: transparent;
-    border-radius: 24px;
-    text-indent: 16px;
-    outline: 0;
-    -webkit-appearance: none
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#desktop_layout-header .box__header .box__head-search .form__input::placeholder {
-    color: #999
+.user-tools a img {
+    width: 2.5rem;
+    height: 2.375rem;
+    filter: grayscale(100%);
 }
 
-#desktop_layout-header .box__header .box__head-search input.form__input:-ms-input-placeholder {
-    color: #999
-}
-
-#desktop_layout-header .box__header .box__head-search .form__input::-ms-clear {
-    display: none;
-}
-
-#desktop_layout-header .box__header .box__head-search .button__search {
-    position: absolute;
-    right: 17px;
-    top: 5px;
-    width: 32px;
-    height: 32px;
-    padding: 5px;
-    border: 0
-}
-
-#desktop_layout-header .box__header .box__head-search .button__search .image {
+/* ---------------------------------------------------------- */
+/* 네비게이션 바 스타일 */
+.navigation-bar {
     width: 100%;
-    height: 100%
+    max-width: 1200px;
+    height: 3.75rem;
+    background-color: #fff;
+    margin: 0 auto;
+    /* 중앙 정렬을 위해 추가 */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* 요소들을 중앙에 배치 */
+    align-items: center;
 }
 
-/* 광고 */
-#desktop_layout-header .box__header .box__keyword-ad .text__ad-title {
+/* 전체 카테고리 */
+.navigation-bar .all-categories {
+    display: flex;
+    align-items: center;
+    width: 12.5rem;
+    /* height: auto; */
+    /* height: 100%; */
+    background-color: #1c8b29;
+    padding: 1rem 0.75rem 1rem;
+}
+
+.all-categories a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 0;
+}
+
+/* 메뉴 링크 */
+.menu-links {
+    display: flex;
+    gap: 0.2rem;
+    /* 각 링크 간격 */
+    font-size: 1rem;
+    align-items: center;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.menu-links a:hover {
+    color: #007acc;
+}
+
+/* 이미지 링크 (약속일에 딱, 사업자클럽) */
+.menu-links img {
+    height: 2rem;
+}
+
+/* 사용자 옵션 */
+.user-options {
+    margin-inline-start: auto;
+    display: flex;
+    gap: 1rem;
+    color: #888;
+    font-size: 0.875rem;
+}
+
+.user-options a {
+    text-decoration: none;
+    color: #888;
+}
+
+.user-options a:hover {
+    color: #333;
+}
+
+.user-options img {
+    margin-left: 0.25rem;
+    vertical-align: middle;
+}
+
+/* ------------------------------------------------- */
+/* 메인 컨텐츠 */
+/* 메인 섹션 스타일 */
+.main-section {
+    width: 100%;
+    height: 25rem;
+    /* 400px -> rem */
+    background-color: #f4f4f4;
+}
+
+.main-container {
+    width: 75rem;
+    /* 1200px -> rem */
+    height: 100%;
+    /* 부모 높이에 맞추어 100% */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 수직 중앙 정렬 */
+}
+
+/* 왼쪽 Depth Navigation */
+.depth-navigation {
+    width: 14rem;
+    /* 224px -> rem */
+    background-color: #22A832;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    /* 부모 높이에 맞추어 100% */
+}
+
+.depth-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.depth-navigation li {
+    height: 2.78rem;
+    /* 각 리스트 항목의 높이 설정 */
+    display: flex;
+    /* 내용 수직 정렬을 위한 flex 사용 */
+    align-items: center;
+    /* 수직 중앙 정렬 */
+    padding: 0 1rem;
+    /* 좌우 패딩 */
+    border-bottom: 1px solid #fff;
+}
+
+.depth-navigation li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
     display: block;
-    margin-top: 43px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #222;
-    letter-spacing: -1px;
-    line-height: 28px
+    width: 100%;
+    /* 링크가 전체 너비를 차지하게 설정 */
 }
 
-#desktop_layout-header .box__header .box__keyword-ad .text__ad-title:after {
-    content: '';
-    width: 20px;
-    height: 14px;
-    margin-left: 4px;
-    background-position: -378px -53px;
-    vertical-align: -1px
-}
-
-#desktop_layout-header .box__header .box__keyword-ad .link__keyword-ad {
-    display: block;
-    margin-top: 12px
-}
-
-#desktop_layout-header .box__header .box__keyword-ad .link__keyword-ad .image {
-    border-radius: 64px
-}
-
-#desktop_layout-header .box__header .box__keyword-ad .link__keyword-ad .text__item-title {
-    padding: 0 40px;
-    margin-top: 15px;
-    font-size: 13px;
-    line-height: 18px;
-    color: #666;
-    letter-spacing: -0.5px
-}
-
-#desktop_layout-header .box__header .box__keyword-ad .link__keyword-ad .text__item-price {
-    margin-top: 6px;
-    font-size: 12px;
-    color: #666;
-}
-
-#desktop_layout-header .box__header .box__keyword-ad .link__keyword-ad .text__item-price .text_number {
-    font-family: Gmarket Sans !important;
-    font-weight: bold;
-    font-size: 14px;
-    color: #444;
-}
-
-
-
-#desktop_layout-header .box__header .box__head-ad {
-    position: absolute;
-    right: 225px;
-    top: 29px;
-    width: 182px;
-    height: 70px;
-    z-index: 10;
-}
-
-#desktop_layout-header .box__header .box__head-mytools {
-    position: absolute;
-    right: -14px;
-    top: 24px;
-    z-index: 210;
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools {
-    font-size: 0
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item {
-    display: inline-block;
-    vertical-align: top
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--mypage {
-    width: 75px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent {
-    width: 74px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart {
-    width: 71px
-}
-
-
-#desktop_layout-header .box__header .box__head-ad {
-    position: absolute;
-    right: 225px;
-    top: 29px;
-    width: 182px;
-    height: 70px;
-    z-index: 10;
-}
-
-#desktop_layout-header .box__header .box__head-mytools {
-    position: absolute;
-    right: -14px;
-    top: 24px;
-    z-index: 210;
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools {
-    font-size: 0
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item {
-    display: inline-block;
-    vertical-align: top
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--mypage {
-    width: 75px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent {
-    width: 74px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart {
-    width: 71px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .link {
+/* 오른쪽 이미지 섹션 */
+.main-image-section {
+    width: 61rem;
+    /* 976px -> rem */
+    height: 100%;
+    /* 부모 높이에 맞추어 100% */
     position: relative;
-    display: block;
-    height: 80px;
+    /* 부모 요소에 상대적 위치를 설정 */
+    background-color: #fff;
 }
 
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .button {
-    position: relative;
-    display: block;
-    width: 74px;
-    height: 80px;
-    z-index: 10
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .link .image,
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .button .image {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 40px;
-    height: 38px;
-    margin: -19px 0 0 -20px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--mypage .link .image {
-    margin-left: -22px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .link .image {
-    margin-left: -25px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .box__recent-item {
-    position: absolute;
-    left: 21px;
-    top: 28px;
-    width: 28px;
-    height: 28px;
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .box__recent-item .image__recent-item {
+.main-image-section img {
     width: 100%;
     height: 100%;
-    border-radius: 3px
+    /* 이미지가 섹션 전체를 차지하도록 설정 */
+    object-fit: cover;
+    /* 이미지 비율 유지하면서 섹션에 맞게 조정 */
 }
 
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .box__cart-count {
+/* 슬라이드 네비게이션 */
+.slide-controls {
     position: absolute;
-    right: 13px;
-    top: 18px;
-    width: 24px;
-    height: 24px;
+    /* 이미지 위에 겹치도록 설정 */
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 반투명 배경 */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.slide-controls button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.slide-info {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+/* ------------------------------------------------- */
+
+/* 메인 배너 섹션 스타일 */
+.main-banner-section {
+    width: 100%;
+    /* 화면에 따라 전체 화면 너비 */
+    padding: 2.5rem 0 0.25rem 0;
+    /* 패딩: 40px 상단, 4px 하단 -> rem으로 */
+    background-color: white;
+    /* 배경 색상 설정 (필요 시 변경 가능) */
+}
+
+/* 콘텐츠 영역 */
+.content {
+    width: 75rem;
+    /* 1200px -> rem */
+    height: 6.25rem;
+    /* 100px -> rem */
+    margin: 0 auto;
+    /* 중앙 정렬을 위한 margin 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 이미지가 수직/수평 중앙에 오도록 설정 */
+}
+
+/* 메인 배너 이미지 */
+.content img {
+    width: 100%;
+    height: auto;
+    max-width: 75rem;
+    /* 이미지 최대 너비 1200px */
+    height: 6.25rem;
+    /* 이미지 고정 높이 100px -> rem */
+    object-fit: cover;
+    /* 이미지 비율 유지하면서 섹션에 맞게 조정 */
+}
+
+/* ------------------------------------------------- */
+/* Best Section */
+/* Best Section */
+.best-section {
+    width: 88.75rem;
+    /* 1420px -> rem */
+    height: 23.5rem;
+    /* 376px -> rem */
+    padding: 3.125rem 0 0 0;
+    /* 패딩 50px 상단 -> rem으로 변환 */
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.best-box {
+    width: 77rem;
+    /* 1232px -> rem */
+    height: 23.5rem;
+    /* 376px -> rem */
+    margin: 0 auto;
+}
+
+/* 텍스트 타이틀 및 전체보기 */
+.text-title {
+    width: 76rem;
+    /* 1216px -> rem */
+    height: 1.875rem;
+    /* 30px -> rem */
+    padding: 0 0 0 1rem;
+    /* padding-left: 16px -> rem */
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    /* 타이틀과 전체보기를 좌우로 배치 */
+    align-items: center;
+    /* 수직 중앙 정렬 */
+}
+
+.text-title h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* 전체보기 링크 */
+.view-all a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* 베스트 아이템 */
+.best-items {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.item {
+    width: 18%;
     text-align: center;
-    background-color: #067dfd;
-    border-radius: 12px;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 1px 0 #fff, inset 0 0 1px 0 #fff;
-    z-index: 10;
+    position: relative;
+    /* 순위를 이미지 위에 겹치기 위해 추가 */
 }
 
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .box__cart-count .text__number {
-    font-size: 11px;
-    font-family: Gmarket Sans !important;
-    line-height: 26px;
+.item-rank {
+    background-color: #22A832;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
-    font-weight: 700;
-    vertical-align: top
-}
-
-
-#desktop_layout-header .box__header .box__head-ad {
+    font-size: 1.5rem;
+    font-weight: bold;
     position: absolute;
-    right: 225px;
-    top: 29px;
-    width: 182px;
-    height: 70px;
-    z-index: 10;
+    top: -1rem;
+    /* 이미지 위로 겹치기 위해 조정 */
+    left: -1rem;
+    /* 왼쪽으로 겹치기 위해 조정 */
 }
 
-#desktop_layout-header .box__header .box__head-mytools {
-    position: absolute;
-    right: -14px;
-    top: 24px;
-    z-index: 210;
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools {
-    font-size: 0
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item {
-    display: inline-block;
-    vertical-align: top
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--mypage {
-    width: 75px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent {
-    width: 74px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart {
-    width: 71px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .link {
+.item-image {
     position: relative;
-    display: block;
-    height: 80px;
+    border: 0.1rem solid #d3d3d3;
+    /* 옅은 회색 테두리 */
+    border-radius: 50%;
+    /* 원형 테두리 */
+    overflow: hidden;
+    /* 이미지가 테두리를 넘지 않도록 설정 */
+    width: 100%;
+    /* 부모 요소 크기에 맞게 설정 */
+    aspect-ratio: 1 / 1;
+    /* 1:1 비율을 유지하여 정사각형 */
 }
 
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .button {
-    position: relative;
-    display: block;
-    width: 74px;
-    height: 80px;
-    z-index: 10
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .link .image,
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .button .image {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 40px;
-    height: 38px;
-    margin: -19px 0 0 -20px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--mypage .link .image {
-    margin-left: -22px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .link .image {
-    margin-left: -25px
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .box__recent-item {
-    position: absolute;
-    left: 21px;
-    top: 28px;
-    width: 28px;
-    height: 28px;
-}
-
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .box__recent-item .image__recent-item {
+.item-image img {
     width: 100%;
     height: 100%;
-    border-radius: 3px
+    object-fit: cover;
+    /* 이미지를 컨테이너에 맞춰 채우기 */
+    border-radius: 50%;
+    /* 이미지도 원형으로 유지 */
 }
 
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .box__cart-count {
-    position: absolute;
-    right: 13px;
-    top: 18px;
-    width: 24px;
-    height: 24px;
-    text-align: center;
-    background-color: #067dfd;
-    border-radius: 12px;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 1px 0 #fff, inset 0 0 1px 0 #fff;
-    z-index: 10;
+.item-description {
+    margin-top: 1rem;
 }
 
-#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .box__cart-count .text__number {
-    font-size: 11px;
-    font-family: Gmarket Sans !important;
-    line-height: 26px;
-    color: #fff;
-    font-weight: 700;
-    vertical-align: top
+.item-description p {
+    margin: 0.5rem 0;
+}
+
+.item-price {
+    font-size: 1.2rem;
+    font-weight: bold;
 }

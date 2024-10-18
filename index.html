@@ -10,70 +10,188 @@
 </head>
 
 <body>
-    <div id="header">
-        <div id="desktop_layout-header" class="section__header section__header-floating">
-            <div class="box__header">
-                <div class="box__header-inner">
-                    <div class="box__head-content">
-                        <h1 class="box__title-logo"><a href=#></a>
-                            <img src="static/img/image_logo.png" class="image_logo">
-                        </h1>
-                        <div class="box__head-search">
-                            <form method="get">
-                                <fieldset>
-                                    <legend>검색</legend>
-                                    <div class="box__search-input">
-                                        <input type="text" name="search" class="input__search"
-                                            placeholder="검색어를 입력해주세요">
-                                        <button type="submit" class="button__search">
-                                            <img src="static/img/image_header-search.png" class="icon_search">
-                                        </button>
-                                    </div>
-                                </fieldset>
-                            </form>
+    <div class="boxheader">
+        <div class="box_head-content">
+            <header id="header">
+                <div class="header-inner">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="static/img/image_logo.png" alt="G마켓 로고">
+                        </a>
+                    </h1>
+                    <div class="search-bar">
+                        <form action="#" method="get">
+                            <button type="submit">
+                                <img src="static/img/image_header-search.png" alt="검색 아이콘" width="16">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="ad-banner">
+                        <img src="static/img/coupon.jpg" alt="G마켓 2만원 쿠폰 증정 이벤트" width="120">
+                    </div>
+                    <div class="user-tools">
+                        <a href="#" title="마이페이지">
+                            <img src="static/img/mypage.svg" alt="마이페이지 아이콘" width="24">
+                        </a>
+                        <a href="#" title="최근 본 상품">
+                            <img src="static/img/history-icon.svg" alt="최근 본 상품 아이콘" width="24">
+                        </a>
+                        <a href="#" title="장바구니">
+                            <img src="static/img/cart-icon.svg" alt="장바구니 아이콘" width="24">
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="navigation-bar">
+                <div class="all-categories">
+                    <a href="#">
+                        <div class="category-icon">
+                            <img src="static/img/hamburger.png" alt="전체 카테고리 아이콘" width="16">
                         </div>
-                        <div class="box__head-ad">
-                            <span class="for-a11y"></span>
-                            <img style="max-width: 100%; max-height: 100%;" src="static/img/coupon.jpg"
-                                class="image_ad">
-                        </div>
-                        <div class="box__head-mytools">
-                            <ul class="list__mytools">
-                                <li class="list-item list-item--mypage">
-                                    <a href="https://my.gmarket.co.kr/ko/pc/main" title="나의 쇼핑정보" class="link">
-                                        <img src="./G마켓 - 지금부터의 마켓_files/image__header-mypage.svg" loading="lazy"
-                                            decoding="async" alt="마이페이지" class="image">
-                                    </a>
-                                </li>
-                                <li class="list-item list-item--recent">
-                                    <button type="button" id="button__recent-layer" class="button"
-                                        data-montelena-floating_yn="Y">
-                                        <img src="./G마켓 - 지금부터의 마켓_files/image__header-recent.svg" alt="" class="image">
-                                        <span class="box__recent-item"></span>
-                                    </button>
-                                    <div id="box__recent-layer" aria-labelledby="button__recent-layer" role="button"
-                                        class="box__recent-layer"
-                                        style="display: block; visibility: hidden; pointer-events: none;">
-                                        <div role="button" tabindex="0" class="box__recent-layer-inner">
-                                            <div class="box__layer-title">
-                                                <span class="text__layer-title text__layer-title--recent">최근 본 상품</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-item list-item--cart">
-                                    <a href="#" title="장바구니" class="link">
-                                        <img src="./G마켓 - 지금부터의 마켓_files/image__header-cart.svg" loading="lazy"
-                                            decoding="async" alt="" class="image">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <span>전체 카테고리</span>
+                    </a>
+                </div>
+                <nav class="menu-links">
+                    <a href="#">베스트</a>
+                    <a href="#">슈퍼딜</a>
+                    <a href="#">쿠폰 · 출첵</a>
+                    <a href="#">스마일프레시</a>
+                    <a href="#">
+                        <img src="static/img/smile.gif" alt="약속일에 딱!" height="16">
+                    </a>
+                    <a href="#">유니버스 클럽</a>
+                    <a href="#">
+                        <img src="static/img/businessClub.png" alt="사업자클럽" height="16">
+                    </a>
+                </nav>
+                <div class="user-options">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">고객센터</a>
+                    <a href="#">Global <img src="static/img/arrow-down-icon.png" alt="Global 옵션" width="12"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="main-container">
+            <!-- 왼쪽 Depth Navigation -->
+            <div class="depth-navigation">
+                <ul>
+                    <li><a href="#">브랜드패션</a></li>
+                    <li><a href="#">패션의류 · 잡화 · 뷰티</a></li>
+                    <li><a href="#">유아동</a></li>
+                    <li><a href="#">식품 · 생필품</a></li>
+                    <li><a href="#">홈데코 · 문구 · 취미 · 반려</a></li>
+                    <li><a href="#">컴퓨터 · 디지털 · 가전</a></li>
+                    <li><a href="#">스포츠 · 건강 · 렌탈</a></li>
+                    <li><a href="#">자동차 · 공구</a></li>
+                    <li><a href="#">여행 · 도서 · e쿠폰</a></li>
+                </ul>
+            </div>
+
+            <!-- 오른쪽 이미지 섹션 -->
+            <div class="main-image-section">
+                <img src="static/img/main-advertise.jpg" alt="패션 배너">
+                <!-- 슬라이드 네비게이션 -->
+                <div class="slide-controls">
+                    <button class="prev">&#9664;</button>
+                    <span class="slide-info">26 / 45</span>
+                    <button class="next">&#9654;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-banner-section">
+        <div class="content">
+            <img src="static/img/main-banner.jpg" alt="메인 배너">
+        </div>
+    </div>
+
+    <div class="best-section">
+        <div class="best-box">
+            <div class="text-title">
+                <h2>지금 제일 잘 나가는 상품</h2>
+                <!-- 전체보기 링크 -->
+                <div class="view-all">
+                    <a href="#">전체보기 &rarr;</a>
+                </div>
+            </div>
+            <div class="best-items">
+                <!-- 첫 번째 아이템 -->
+                <div class="item">
+                    <div class="item-rank">
+                        <span>01</span>
+                    </div>
+                    <div class="item-image">
+                        <img src="static/img/best-item1.jpg" alt="상품 1">
+                    </div>
+                    <div class="item-description">
+                        <p>(행사상품)동서 모카골드믹스 230T 2760G</p>
+                        <p class="item-price">24,990원</p>
+                    </div>
+                </div>
+
+                <!-- 두 번째 아이템 -->
+                <div class="item">
+                    <div class="item-rank">
+                        <span>02</span>
+                    </div>
+                    <div class="item-image">
+                        <img src="static/img/best-item2.jpg" alt="상품 2">
+                    </div>
+                    <div class="item-description">
+                        <p>다미댁x버즈버즈 랜덤배송 5권</p>
+                        <p class="item-price">9,900원</p>
+                    </div>
+                </div>
+
+                <!-- 세 번째 아이템 -->
+                <div class="item">
+                    <div class="item-rank">
+                        <span>03</span>
+                    </div>
+                    <div class="item-image">
+                        <img src="static/img/best-item3.jpg" alt="상품 3">
+                    </div>
+                    <div class="item-description">
+                        <p>(10/18 단하루 20%쿠폰+10%적립)이랜드아동</p>
+                        <p class="item-price">19,900원</p>
+                    </div>
+                </div>
+
+                <!-- 네 번째 아이템 -->
+                <div class="item">
+                    <div class="item-rank">
+                        <span>04</span>
+                    </div>
+                    <div class="item-image">
+                        <img src="static/img/best-item4.jpg" alt="상품 4">
+                    </div>
+                    <div class="item-description">
+                        <p>(10/18 단하루 20%쿠폰+10%적립)이랜드아동</p>
+                        <p class="item-price">16,900원</p>
+                    </div>
+                </div>
+
+                <!-- 다섯 번째 아이템 -->
+                <div class="item">
+                    <div class="item-rank">
+                        <span>05</span>
+                    </div>
+                    <div class="item-image">
+                        <img src="static/img/best-item5.jpg" alt="상품 5">
+                    </div>
+                    <div class="item-description">
+                        <p>물라웨어 BEST FW 티셔츠/긴팔티</p>
+                        <p class="item-price">21,300원</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>
