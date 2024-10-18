@@ -1,0 +1,450 @@
+/* Global Common */
+.for-a11y {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    text-indent: -5000em;
+}
+
+#header *,
+#desktop_layout-header * {
+    font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Roboto, Noto Sans CJK KR, Tahoma, 'Noto Sans KR', 'Gmarket Sans', sans-serif;
+}
+
+button {
+    padding: 0;
+    background-color: transparent
+}
+
+#desktop_layout-header.section__header {
+    position: relative;
+    height: 173px;
+    z-index: 5000
+}
+
+#desktop_layout-header.section__header a:hover {
+    text-decoration: none
+}
+
+#desktop_layout-header .box__header {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 173px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#desktop_layout-header .box__header .box__header-inner {
+    position: relative;
+    width: 1200px;
+    height: 173px;
+    margin: 0 auto
+}
+
+#desktop_layout-header .box__header .box__head-content {
+    height: 113px
+}
+
+#desktop_layout-header .box__header .box__title-logo {
+    display: inline-block;
+    margin-left: -40px;
+    font-size: 0;
+    vertical-align: top
+}
+
+#desktop_layout-header .box__header .box__head-content--lottie .box__title-logo {
+    position: absolute;
+    left: -40px;
+    top: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+#desktop_layout-header .box__header .box__title-logo .link__head {
+    display: block
+}
+
+#desktop_layout-header .box__header .box__title-logo .link__head .sprite__common {
+    display: none
+}
+
+#desktop_layout-header .box__header .box__head-search {
+    position: relative;
+    display: inline-block;
+    width: 553px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: -5px;
+    border-radius: 24px;
+    border: 2px solid #067dfd;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: #fff
+}
+
+#desktop_layout-header .box__header .box__head-content--lottie .box__head-search {
+    position: absolute;
+    left: 200px;
+    top: 40px;
+    margin: 0;
+    z-index: 10
+}
+
+#desktop_layout-header .box__header .box__head-search .box__search-input {
+    display: block;
+    padding: 7px 8px 8px
+}
+
+#desktop_layout-header .box__header .box__head-search .form__input {
+    display: block;
+    width: 100%;
+    height: 29px;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    color: #222;
+    letter-spacing: -0.5px;
+    line-height: 29px;
+    background-color: transparent;
+    border-radius: 24px;
+    text-indent: 16px;
+    outline: 0;
+    -webkit-appearance: none
+}
+
+#desktop_layout-header .box__header .box__head-search .form__input::placeholder {
+    color: #999
+}
+
+#desktop_layout-header .box__header .box__head-search input.form__input:-ms-input-placeholder {
+    color: #999
+}
+
+#desktop_layout-header .box__header .box__head-search .form__input::-ms-clear {
+    display: none;
+}
+
+#desktop_layout-header .box__header .box__head-search .button__search {
+    position: absolute;
+    right: 17px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    border: 0
+}
+
+#desktop_layout-header .box__header .box__head-search .button__search .image {
+    width: 100%;
+    height: 100%
+}
+
+/* 광고 */
+#desktop_layout-header .box__header .box__keyword-ad .text__ad-title {
+    display: block;
+    margin-top: 43px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #222;
+    letter-spacing: -1px;
+    line-height: 28px
+}
+
+#desktop_layout-header .box__header .box__keyword-ad .text__ad-title:after {
+    content: '';
+    width: 20px;
+    height: 14px;
+    margin-left: 4px;
+    background-position: -378px -53px;
+    vertical-align: -1px
+}
+
+#desktop_layout-header .box__header .box__keyword-ad .link__keyword-ad {
+    display: block;
+    margin-top: 12px
+}
+
+#desktop_layout-header .box__header .box__keyword-ad .link__keyword-ad .image {
+    border-radius: 64px
+}
+
+#desktop_layout-header .box__header .box__keyword-ad .link__keyword-ad .text__item-title {
+    padding: 0 40px;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #666;
+    letter-spacing: -0.5px
+}
+
+#desktop_layout-header .box__header .box__keyword-ad .link__keyword-ad .text__item-price {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #666;
+}
+
+#desktop_layout-header .box__header .box__keyword-ad .link__keyword-ad .text__item-price .text_number {
+    font-family: Gmarket Sans !important;
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+}
+
+
+
+#desktop_layout-header .box__header .box__head-ad {
+    position: absolute;
+    right: 225px;
+    top: 29px;
+    width: 182px;
+    height: 70px;
+    z-index: 10;
+}
+
+#desktop_layout-header .box__header .box__head-mytools {
+    position: absolute;
+    right: -14px;
+    top: 24px;
+    z-index: 210;
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools {
+    font-size: 0
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item {
+    display: inline-block;
+    vertical-align: top
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--mypage {
+    width: 75px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent {
+    width: 74px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart {
+    width: 71px
+}
+
+
+#desktop_layout-header .box__header .box__head-ad {
+    position: absolute;
+    right: 225px;
+    top: 29px;
+    width: 182px;
+    height: 70px;
+    z-index: 10;
+}
+
+#desktop_layout-header .box__header .box__head-mytools {
+    position: absolute;
+    right: -14px;
+    top: 24px;
+    z-index: 210;
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools {
+    font-size: 0
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item {
+    display: inline-block;
+    vertical-align: top
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--mypage {
+    width: 75px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent {
+    width: 74px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart {
+    width: 71px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .link {
+    position: relative;
+    display: block;
+    height: 80px;
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .button {
+    position: relative;
+    display: block;
+    width: 74px;
+    height: 80px;
+    z-index: 10
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .link .image,
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .button .image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 38px;
+    margin: -19px 0 0 -20px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--mypage .link .image {
+    margin-left: -22px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .link .image {
+    margin-left: -25px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .box__recent-item {
+    position: absolute;
+    left: 21px;
+    top: 28px;
+    width: 28px;
+    height: 28px;
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .box__recent-item .image__recent-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .box__cart-count {
+    position: absolute;
+    right: 13px;
+    top: 18px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    background-color: #067dfd;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px 0 #fff, inset 0 0 1px 0 #fff;
+    z-index: 10;
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .box__cart-count .text__number {
+    font-size: 11px;
+    font-family: Gmarket Sans !important;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 700;
+    vertical-align: top
+}
+
+
+#desktop_layout-header .box__header .box__head-ad {
+    position: absolute;
+    right: 225px;
+    top: 29px;
+    width: 182px;
+    height: 70px;
+    z-index: 10;
+}
+
+#desktop_layout-header .box__header .box__head-mytools {
+    position: absolute;
+    right: -14px;
+    top: 24px;
+    z-index: 210;
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools {
+    font-size: 0
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item {
+    display: inline-block;
+    vertical-align: top
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--mypage {
+    width: 75px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent {
+    width: 74px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart {
+    width: 71px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .link {
+    position: relative;
+    display: block;
+    height: 80px;
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .button {
+    position: relative;
+    display: block;
+    width: 74px;
+    height: 80px;
+    z-index: 10
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .link .image,
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item .button .image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 38px;
+    margin: -19px 0 0 -20px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--mypage .link .image {
+    margin-left: -22px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .link .image {
+    margin-left: -25px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .box__recent-item {
+    position: absolute;
+    left: 21px;
+    top: 28px;
+    width: 28px;
+    height: 28px;
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--recent .box__recent-item .image__recent-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .box__cart-count {
+    position: absolute;
+    right: 13px;
+    top: 18px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    background-color: #067dfd;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px 0 #fff, inset 0 0 1px 0 #fff;
+    z-index: 10;
+}
+
+#desktop_layout-header .box__header .box__head-mytools .list__mytools .list-item--cart .box__cart-count .text__number {
+    font-size: 11px;
+    font-family: Gmarket Sans !important;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 700;
+    vertical-align: top
+}

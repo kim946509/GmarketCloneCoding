@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>G마켓 클론코딩 헤더</title>
+
+</head>
+
+<body>
+    <div id="header">
+        <div id="desktop_layout-header" class="section__header section__header-floating">
+            <div class="box__header">
+                <div class="box__header-inner">
+                    <div class="box__head-content">
+                        <h1 class="box__title-logo"><a href=#></a>
+                            <img src="static/img/image_logo.png" class="image_logo">
+                        </h1>
+                        <div class="box__head-search">
+                            <form method="get">
+                                <fieldset>
+                                    <legend>검색</legend>
+                                    <div class="box__search-input">
+                                        <input type="text" name="search" class="input__search"
+                                            placeholder="검색어를 입력해주세요">
+                                        <button type="submit" class="button__search">
+                                            <img src="static/img/image_header-search.png" class="icon_search">
+                                        </button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="box__head-ad">
+                            <span class="for-a11y"></span>
+                            <img style="max-width: 100%; max-height: 100%;" src="static/img/coupon.jpg"
+                                class="image_ad">
+                        </div>
+                        <div class="box__head-mytools">
+                            <ul class="list__mytools">
+                                <li class="list-item list-item--mypage">
+                                    <a href="https://my.gmarket.co.kr/ko/pc/main" title="나의 쇼핑정보" class="link">
+                                        <img src="./G마켓 - 지금부터의 마켓_files/image__header-mypage.svg" loading="lazy"
+                                            decoding="async" alt="마이페이지" class="image">
+                                    </a>
+                                </li>
+                                <li class="list-item list-item--recent">
+                                    <button type="button" id="button__recent-layer" class="button"
+                                        data-montelena-floating_yn="Y">
+                                        <img src="./G마켓 - 지금부터의 마켓_files/image__header-recent.svg" alt="" class="image">
+                                        <span class="box__recent-item"></span>
+                                    </button>
+                                    <div id="box__recent-layer" aria-labelledby="button__recent-layer" role="button"
+                                        class="box__recent-layer"
+                                        style="display: block; visibility: hidden; pointer-events: none;">
+                                        <div role="button" tabindex="0" class="box__recent-layer-inner">
+                                            <div class="box__layer-title">
+                                                <span class="text__layer-title text__layer-title--recent">최근 본 상품</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-item list-item--cart">
+                                    <a href="#" title="장바구니" class="link">
+                                        <img src="./G마켓 - 지금부터의 마켓_files/image__header-cart.svg" loading="lazy"
+                                            decoding="async" alt="" class="image">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
