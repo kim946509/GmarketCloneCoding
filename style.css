@@ -6,6 +6,11 @@ body {
     background-color: #fff;
 }
 
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
 .boxheader {
     width: 100%;
     height: 10.8125rem;
@@ -382,12 +387,8 @@ body {
 
 /* 텍스트 타이틀 및 전체보기 */
 .text-title {
-    width: 76rem;
-    /* 1216px -> rem */
+    width: 100%;
     height: 1.875rem;
-    /* 30px -> rem */
-    padding: 0 0 0 1rem;
-    /* padding-left: 16px -> rem */
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
@@ -396,10 +397,6 @@ body {
     /* 수직 중앙 정렬 */
 }
 
-.text-title h2 {
-    font-size: 1.5rem;
-    margin: 0;
-}
 
 /* 전체보기 링크 */
 .view-all a {
@@ -536,11 +533,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-}
-
-.market-title h2 {
-    font-size: 1.5rem;
-    margin: 0;
 }
 
 .go-to a {
@@ -699,7 +691,7 @@ body {
     /* 세로 2줄 */
     gap: 1rem;
     /* 아이템 간 간격 */
-    padding: 1.5rem 0;
+    /* padding: 1.5rem 0; */
 }
 
 /* 아이템 박스 */
@@ -832,4 +824,177 @@ body {
     /* 화살표 색상 */
     font-size: 1rem;
     /* 화살표 크기 */
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* 당일배송 섹션 */
+.today-delivery-section {
+    width: 100%;
+    height: auto;
+    padding: 4rem 0 0 0;
+    background-color: #fff;
+}
+
+.today-delivery-inner {
+    width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.text-title {
+    margin-bottom: 1rem;
+}
+
+.today-delivery-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.today-delivery-banner {
+    width: 18.75rem;
+    height: 23.125rem;
+    background-color: #ff3320;
+    border-radius: 1rem;
+    padding: 2.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#banner-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.banner-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+
+.detail-banner-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.today-delivery-banner img {
+    width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+}
+
+.today-delivery-item-box {
+    /* 872px -> rem */
+    display: flex;
+    gap: 1rem;
+    height: 23.125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    border: 0.1rem solid #d3d3d3;
+}
+
+/* item-box-header 스타일 */
+.item-box-header {
+    padding: 1rem 0;
+    height: 1rem;
+
+}
+
+.item-box-header span:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    color: #e53935;
+    border-right: 0.1rem solid #e0e0e0;
+    /* 빨간색 텍스트 */
+}
+
+.item-box-header span:last-child {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.item-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    padding-top: 2rem;
+    border-top: 0.1rem solid #e0e0e0;
+    gap: 1rem;
+}
+
+/* ------------------------------------------------------ */
+/* G마켓 서비스 섹션 */
+.gmarket-service-section {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.gmarket-service-inner {
+    width: 75rem;
+    /* 1200px */
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* 세로 배치 */
+    justify-content: center;
+    align-items: center;
+}
+
+.gmarket-text-title {}
+
+/* 서비스 아이콘 리스트 */
+.service-icon-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7rem;
+    /* 각 아이템의 너비 */
+    text-align: center;
+}
+
+.service-item img {
+    width: 4rem;
+    /* 아이콘 이미지 크기 */
+    height: 4rem;
+    border-radius: 50%;
+    /* 원형 모양 */
+    margin-bottom: 0.5rem;
+}
+
+.service-item span {
+    font-size: 0.9rem;
+    /* 서비스명 폰트 크기 */
+    color: #333;
 }
