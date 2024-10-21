@@ -470,7 +470,7 @@ body {
 }
 
 
-.item-description {
+.best-items .item .item-description {
     width: 12.5rem;
     /* 200px -> rem */
     height: 4.5rem;
@@ -484,7 +484,7 @@ body {
     /* 이미지와의 간격을 적절히 설정 */
 }
 
-.item-description p {
+.best-items .item .item-description p {
     margin: 0.2rem 0;
     font-size: 0.9rem;
     /* 텍스트 크기 조정 */
@@ -493,7 +493,7 @@ body {
     color: #333;
 }
 
-.item-description .item-price {
+.best-items .item .item-description .item-price {
     font-size: 1rem;
     font-weight: bold;
     color: #333;
@@ -524,7 +524,7 @@ body {
     /* height: 48.5rem; */
     /* 776px */
     padding: 0;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -641,6 +641,8 @@ body {
     /* 부모 컨테이너에 맞춰 너비를 균등하게 나누기 */
     background-color: white;
     padding: 0.5rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+    /* 구분선 추가 */
 }
 
 /* 카테고리 */
@@ -684,4 +686,150 @@ body {
     width: 1px;
     height: 60%;
     background-color: #d3d3d3;
+}
+
+/* 카테고리 아이템 */
+
+/* 아이템 그리드 설정 */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* 가로 3줄 */
+    grid-template-rows: repeat(3, auto);
+    /* 세로 2줄 */
+    gap: 1rem;
+    /* 아이템 간 간격 */
+    padding: 1.5rem 0;
+}
+
+/* 아이템 박스 */
+.item-box {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+/* 이미지 박스 */
+.image-box {
+    width: 6.125rem;
+    /* 98px -> rem 변환 */
+    height: 6.125rem;
+    /* 98px -> rem 변환 */
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    /* 가로를 100%로 맞추고, 세로는 비율에 따라 조정 */
+    object-fit: contain;
+    /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+    max-height: 100%;
+    /* 높이가 100%를 넘지 않도록 설정 */
+}
+
+/* 아이템 설명 */
+.item-description {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 텍스트 태그 */
+.item-description .text-tag {
+    width: 50%;
+    /* 33px -> rem 변환 */
+    height: 0.8rem;
+    /* 18px -> rem 변환 */
+    background-color: #22A832;
+    color: #fff;
+    padding: 0.25rem;
+    font-size: 0.65rem;
+    text-align: center;
+}
+
+/* 아이템 이름 */
+.item-description .item-name {
+    font-weight: bold;
+    font-size: 0.775rem;
+    color: #333;
+    margin-top: 0.375rem;
+    /* 6px -> rem 변환 */
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+/* 아이템 가격 */
+.item-description .item-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 0.375rem;
+}
+
+#jundan-items,
+#oban-items {
+    display: none;
+}
+
+/* ------------------------------------------------- */
+/* 더보기 버튼 */
+/* more-button 스타일 */
+/* more-button 스타일 */
+.more-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 1rem;
+    border: 0.063rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 30rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: center;
+    color: #333;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+
+/* 텍스트와 화살표 아이콘을 감싼 span */
+.sprite-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* 둥근 원과 그 안에 화살표 표시 */
+.sprite-text::after {
+    content: '➔';
+    /* 화살표 기호 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    /* 둥근 원의 크기 */
+    height: 2rem;
+    background-color: #22A832;
+    /* 초록색 배경 */
+    border-radius: 50%;
+    /* 원 모양 */
+    margin-left: 1rem;
+    /* 텍스트와 화살표 사이 간격 */
+    color: white;
+    /* 화살표 색상 */
+    font-size: 1rem;
+    /* 화살표 크기 */
 }
