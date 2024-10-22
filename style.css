@@ -12,18 +12,18 @@ h2 {
     margin: 0;
 }
 
+/* -------------------------------------------------------- */
+/* 상단 박스 섹션 스타일 */
 .boxheader {
     width: 100%;
     height: 10.8125rem;
     display: flex;
     /* 중앙 정렬을 위한 flex 적용 */
     justify-content: center;
-    /* 173px -> rem */
 }
 
 .box_head-content {
     max-width: 75rem;
-    /* 1200px -> rem */
     height: 100%;
     width: 100%;
 }
@@ -34,7 +34,6 @@ h2 {
     background-color: #fff;
     width: 100%;
     height: 7.0625rem;
-    /* 113px -> rem */
     min-width: 1260px;
 }
 
@@ -55,21 +54,15 @@ h2 {
 
 .logo img {
     width: 15rem;
-    /* 240px -> rem */
     height: 7.0625rem;
-    /* 113px -> rem */
 }
 
 /* 검색창 */
 .search-bar {
     width: 30rem;
-    /* 고정된 549px */
     height: 2.5rem;
-    /* 고정된 44px */
-    margin: 0;
-    /* 여백을 제거 */
-    border: 2px solid #007acc;
-    border-radius: 20px;
+    border: 0.1rem solid #007acc;
+    border-radius: 1.2rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -102,17 +95,13 @@ h2 {
     display: flex;
     align-items: center;
     font-size: 0.875rem;
-    /* 14px -> rem */
     color: #666;
 }
 
 .ad-banner img {
     width: 11.375rem;
-    /* 182px -> rem */
     height: 4.375rem;
-    /* 70px -> rem */
     margin-right: 0.625rem;
-    /* 10px -> rem */
 }
 
 /* 사용자 도구 (마이페이지, 장바구니 등) */
@@ -381,7 +370,6 @@ h2 {
     padding: 2.5rem 0 0.25rem 0;
     /* 패딩: 40px 상단, 4px 하단 -> rem으로 */
     background-color: white;
-    /* 배경 색상 설정 (필요 시 변경 가능) */
 }
 
 /* 콘텐츠 영역 */
@@ -412,23 +400,26 @@ h2 {
 
 /* ------------------------------------------------- */
 /* Best Section */
+/* 메인 마켓 섹션 */
 .best-section {
-    width: 88.75rem;
-    /* 1420px -> rem */
+    width: 100%;
+    height: auto;
+    padding: 4rem 0 0 0;
+    background-color: #fff;
+}
+
+.best-inner {
+    width: 77rem;
     height: 23.5rem;
-    /* 376px -> rem */
-    padding: 3.125rem 0 0 0;
-    /* 패딩 50px 상단 -> rem으로 변환 */
     background-color: #fff;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .best-box {
     width: 77rem;
-    /* 1232px -> rem */
     height: 23.5rem;
-    /* 376px -> rem */
-    margin: 0 auto;
 }
 
 /* 텍스트 타이틀 및 전체보기 */
@@ -440,7 +431,6 @@ h2 {
     justify-content: space-between;
     /* 타이틀과 전체보기를 좌우로 배치 */
     align-items: center;
-    /* 수직 중앙 정렬 */
 }
 
 
@@ -515,9 +505,7 @@ h2 {
 
 .best-items .item .item-description {
     width: 12.5rem;
-    /* 200px -> rem */
     height: 4.5rem;
-    /* 72px -> rem */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -553,7 +541,6 @@ h2 {
 
 .main-market-inner {
     width: 75rem;
-    /* 1200px */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -563,11 +550,7 @@ h2 {
 .smile-fresh-box,
 .smile-delivery-box {
     width: 35.875rem;
-    /* 574px */
-    /* height: 48.5rem; */
-    /* 776px */
     padding: 0;
-    /* background-color: #f4f4f4; */
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -581,21 +564,11 @@ h2 {
     padding: 0 1rem;
 }
 
-.go-to a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #22A832;
-    font-weight: bold;
-}
-
 /* 배너 정보 섹션 */
 .information-box {
     width: 14.5rem;
-    /* 232px */
     height: 11.625rem;
-    /* 186px */
     padding: 2.25rem 16.3125rem 0 5.0625rem;
-    /* padding: 36px 261px 0px 81px */
     display: flex;
     align-items: center;
     position: relative;
@@ -614,9 +587,7 @@ h2 {
 
 .banner-logo img {
     width: 7.5rem;
-    /* 120px -> rem (7.5rem) */
     height: 1.375rem;
-    /* 22px -> rem (1.375rem) */
 }
 
 .banner-text {
@@ -727,18 +698,16 @@ h2 {
 }
 
 /* 카테고리 아이템 */
-
 /* 아이템 그리드 설정 */
 .item-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    /* 가로 3줄 */
-    grid-template-rows: repeat(3, auto);
     /* 세로 2줄 */
+    grid-template-rows: repeat(3, auto);
+    /* 가로 3줄 */
     gap: 1rem;
     margin: 1.5rem;
     /* 아이템 간 간격 */
-    /* padding: 1.5rem 0; */
 }
 
 /* 아이템 박스 */
@@ -751,9 +720,7 @@ h2 {
 /* 이미지 박스 */
 .image-box {
     width: 6.125rem;
-    /* 98px -> rem 변환 */
     height: 6.125rem;
-    /* 98px -> rem 변환 */
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     border-radius: 0.25rem;
     margin-right: 1rem;
@@ -785,9 +752,7 @@ h2 {
 /* 텍스트 태그 */
 .item-description .text-tag {
     width: 50%;
-    /* 33px -> rem 변환 */
     height: 0.8rem;
-    /* 18px -> rem 변환 */
     background-color: #22A832;
     color: #fff;
     padding: 0.25rem;
@@ -801,7 +766,6 @@ h2 {
     font-size: 0.775rem;
     color: #333;
     margin-top: 0.375rem;
-    /* 6px -> rem 변환 */
     line-height: 1.2;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -824,7 +788,6 @@ h2 {
 /* ------------------------------------------------- */
 /* 더보기 버튼 */
 /* more-button 스타일 */
-/* more-button 스타일 */
 .more-button {
     display: inline-flex;
     align-items: center;
@@ -843,29 +806,30 @@ h2 {
 }
 
 
-/* 텍스트와 화살표 아이콘을 감싼 span */
-.sprite-text {
+/* 텍스트와 화살표 아이콘을 감싼 태그*/
+.main-after-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    text-decoration: none;
 }
 
 /* 둥근 원과 그 안에 화살표 표시 */
-.sprite-text::after {
+.main-after-link::after {
     content: '➔';
     /* 화살표 기호 */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2rem;
+    width: 1.5rem;
     /* 둥근 원의 크기 */
-    height: 2rem;
+    height: 1.5rem;
     background-color: #22A832;
     /* 초록색 배경 */
     border-radius: 50%;
     /* 원 모양 */
-    margin-left: 1rem;
+    margin-left: 0.3rem;
     /* 텍스트와 화살표 사이 간격 */
     color: white;
     /* 화살표 색상 */
@@ -873,7 +837,6 @@ h2 {
     /* 화살표 크기 */
 }
 
-/* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* 당일배송 섹션 */
 .today-delivery-section {
@@ -900,6 +863,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    /*왼쪽 정렬*/
     gap: 2rem;
 }
 
@@ -912,6 +876,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*양쪽 끝으로 정렬*/
     align-items: center;
     text-align: center;
     color: white;
@@ -949,7 +914,6 @@ h2 {
 }
 
 .today-delivery-item-box {
-    /* 872px -> rem */
     display: flex;
     gap: 1rem;
     height: 23.125rem;
@@ -974,8 +938,8 @@ h2 {
     font-size: 1.2rem;
     padding-right: 1rem;
     color: #e53935;
-    border-right: 0.1rem solid #e0e0e0;
     /* 빨간색 텍스트 */
+    border-right: 0.1rem solid #e0e0e0;
 }
 
 .item-box-header span:last-child {
@@ -1055,7 +1019,6 @@ h2 {
 
 .home-shopping-inner {
     width: 75rem;
-    /* 1200px */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1097,9 +1060,7 @@ h2 {
 /* 개별 아이템 */
 .shopping-item {
     width: 23.75rem;
-    /* 380px */
     height: 19rem;
-    /* 304px */
     border-radius: 1rem;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -1109,9 +1070,7 @@ h2 {
 .item-thumbnail {
     position: relative;
     width: 23.75rem;
-    /* 380px */
     height: 12.375rem;
-    /* 198px */
     overflow: hidden;
 }
 
@@ -1158,7 +1117,6 @@ h2 {
     justify-content: space-between;
     align-items: center;
     height: 6.625rem;
-    /* 106px */
 }
 
 .item-title {
@@ -1210,7 +1168,6 @@ h2 {
     height: auto;
     padding: 4rem 0;
     position: relative;
-    /* 배경 요소 추가를 위해 relative로 설정 */
 }
 
 .super-deal-section::before {
@@ -1248,14 +1205,8 @@ h2 {
     /* 로고 크기 */
 }
 
-.go-to {
-    font-size: 1rem;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.super-deal-header a {
+    color: white;
 }
 
 /* 슈퍼딜 아이템 리스트 */
@@ -1266,7 +1217,6 @@ h2 {
 
 .deal-item {
     width: 23.75rem;
-    /* 아이템의 가로 너비 (380px) */
     background-color: #fff;
     border-radius: 0.5rem;
     display: flex;
@@ -1278,7 +1228,6 @@ h2 {
 .item-thumbnail {
     width: 100%;
     height: 12.375rem;
-    /* 198px */
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
@@ -1314,7 +1263,6 @@ h2 {
 .deal-label {
     font-size: 0.875rem;
     color: red;
-    /* text-decoration: line-through; */
 }
 
 .original-price {
@@ -1339,11 +1287,6 @@ h2 {
     margin-top: 0.5rem;
 }
 
-/* 전체보기 링크 */
-.go-to:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
 
 /* 좋아요 버튼 위치 조정 */
 .like-button {
@@ -1351,7 +1294,7 @@ h2 {
     top: 0.8rem;
     right: 0;
     /* 우측 상단에 위치하도록 설정 */
-    z-index: 3;
+    z-index: 1;
 }
 
 .like-button img {
